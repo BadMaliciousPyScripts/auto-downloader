@@ -12,4 +12,4 @@ git clone https://github.com/BadMaliciousPyScripts/auto-downloader.git
 cd auto-downloader
 py main.py
 ```
-Then you can just post your links into the downloadlist.txt file and the download should start automatically
+Then you can just post your links into the downloadlist.txt file and the download should start automatically the links have to be posted on a seperate line to let the downloader work correctly.
