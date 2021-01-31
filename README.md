@@ -8,7 +8,7 @@ This is an easy file downloader for Following file hosters:
 # How to use
 
 ```shell
-git clone 
+git clone https://github.com/BadMaliciousPyScripts/auto-downloader.git
 cd auto-downloader
 py main.py
 ```
