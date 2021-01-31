@@ -4,6 +4,8 @@ from mega import Mega
 import platform
 import os
 import nopy
+import anonfiles
+import mediafire
 
 class func:
     def listtostring(list):
@@ -26,9 +28,9 @@ class func:
 
 class main:
     def download_mega(urllist):
-        print("Creating temp account...", end="\r")
+        print("Logging in to mega...")
         mega = Mega()
-        mlogin = mega.login()
+        mlogin = mega.login("calcbotforspace@gmail.com", "RldHFwBeYnbWa53Gu577")
         url = urllist[0]
         urlinfo = mega.get_public_url_info(url)
         fname = urlinfo["name"]
@@ -44,6 +46,14 @@ class main:
 
     def download_nopy(urllist):
         nopy.nopy.download(urllist[0])
+        main.update_dllist(urllist[0])
+
+    def download_anonfiles(urllist):
+        anonfiles.anonfiles.download(urllist[0])
+        main.update_dllist(urllist[0])
+
+    def download_mediafire(urllist):
+        mediafire.mediafire.download(urllist[0])
         main.update_dllist(urllist[0])
 
     def update_dllist(url):

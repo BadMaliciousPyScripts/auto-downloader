@@ -16,7 +16,7 @@ class anonfiles:
         file_name_extension = file_name[-4:].replace("_", ".")
         file_name_raw = file_name[:-4:]
         file = file_name_raw + file_name_extension
-        print("Downloading file: {} with anonfiles.py".format(file))
+        print("Downloading file: {} with anonfiles.py!".format(file))
         if os.path.isdir('Downloads'):
             pass
         else:

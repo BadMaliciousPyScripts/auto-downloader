@@ -37,7 +37,10 @@ class nopy:
                         "https://data.nopy.to/download",
                         data=download_data
                        ).json()
-
+        if os.path.isdir('Downloads'):
+            pass
+        else:
+            os.mkdir("Downloads")
         with requests.get(
             downloadreq["msg"]["download"], stream=True, allow_redirects=True
             ) as req:

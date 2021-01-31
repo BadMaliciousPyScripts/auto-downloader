@@ -68,7 +68,8 @@ class main:
         downloader = {
             "mega": main.downloadmega,
             "nopy": main.downloadnopy,
-            "mediafire": main.downloadmediafire
+            "mediafire": main.downloadmediafire,
+            "anonfiles": main.downloadanonfiles
         }
         function = downloader.get(
             arg, lambda: print("Invalid Argument", lambda: func.freturn())
@@ -83,5 +84,8 @@ class main:
 
     def downloadmediafire(urllist):
         downloader.main.download_mediafire(urllist)
+
+    def downloadanonfiles(urllist):
+        downloader.main.download_anonfiles(urllist)
 
 main.loop()
