@@ -13,3 +13,5 @@ cd auto-downloader
 py main.py
 ```
 Then you can just post your links into the downloadlist.txt file and the download should start automatically the links have to be posted on a seperate line to let the downloader work correctly.
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/TPR9qLC/file.png" alt="file" border="0"></a>
