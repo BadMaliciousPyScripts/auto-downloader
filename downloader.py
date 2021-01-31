@@ -30,7 +30,7 @@ class main:
     def download_mega(urllist):
         print("Logging in to mega...")
         mega = Mega()
-        mlogin = mega.login("calcbotforspace@gmail.com", "RldHFwBeYnbWa53Gu577")
+        mlogin = mega.login()
         url = urllist[0]
         urlinfo = mega.get_public_url_info(url)
         fname = urlinfo["name"]
