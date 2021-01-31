@@ -54,8 +54,9 @@ class main:
             sw.start()
         if urllist is False:
             dur = str(sw)
-            print(f"Cond False ignoring Task since: {dur}          ", end="\r")
+            print(f"Cond False ignoring Task for: {dur}          ", end="\r")
         else:
+            sw.reset()
             main.switch_downloader(urllist[0], urllist)
 
     def switch_downloader(arg, urllist):
