@@ -1,4 +1,4 @@
 requests
 beautifulsoup4
 mega.py
-stopwatch
+stopwatch.py
