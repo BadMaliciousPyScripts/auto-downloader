@@ -50,8 +50,8 @@ class nopy:
                     file_info = os.stat(f.name)
                     strms = xtra.calcthisshit(file_info.st_size, file_size)
                     print('{:.2f}/{:.2f}mb downloaded - {}'.format(
-                        file_info.st_size/1000000,
-                        file_size/1000000,
+                        file_info.st_size*(9.537*10**(0-7)),
+                        file_size*(9.537*10**(0-7)),
                         strms,
                     ), end="\r")
         print("")

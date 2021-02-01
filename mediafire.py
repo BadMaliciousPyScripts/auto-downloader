@@ -12,6 +12,10 @@ class mediafire:
         file_name = mediafire.extractFileName(url)
         print("Downloading file: {} with mediafire.py!".format(file_name))
         file_size = int(requests.head(download_link).headers.get("Content-Length"))
+        if os.path.isdir('Downloads'):
+            pass
+        else:
+            os.mkdir("Downloads")
         with requests.get(
                 download_link, stream=True, allow_redirects=True
             ) as req:
@@ -21,8 +25,8 @@ class mediafire:
                     file_info = os.stat(f.name)
                     strms = xtra.calcthisshit(file_info.st_size, file_size)
                     print('{:.2f}/{:.2f}mb downloaded - {}'.format(
-                        file_info.st_size/1000000,
-                        file_size/1000000,
+                        file_info.st_size*(9.537*10**(0-7)),
+                        file_size*(9.537*10**(0-7)),
                         strms,
                     ), end="\r")
         print("")
