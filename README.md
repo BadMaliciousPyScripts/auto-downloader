@@ -11,7 +11,7 @@ This is an easy file downloader for Following file hosters:
 git clone https://github.com/BadMaliciousPyScripts/auto-downloader.git
 cd auto-downloader
 pip install -r requirements.txt
-py main.py
+python3 main.py
 ```
 Then you can just post your links into the downloadlist.txt file and the download should start automatically the links have to be posted on a seperate line to let the downloader work correctly.
 
